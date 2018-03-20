@@ -12,13 +12,6 @@ echo "Installs curl"
 sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-echo "Installs homyzsh"
-sudo apt-get update
-sudo apt-get install git-core zsh
-sudo cp $(which zsh) /etc/shells
-sudo usermod -s /bin/zsh $USER
-wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-
 echo "Installs terminator"
 sudo apt-get install terminator
 
@@ -92,3 +85,12 @@ If you encounter the message:
 It is just a hiccup with the shell, solutions:
     $ source ~/.rvm/scripts/rvm
     Allow login shell, example http://rvm.io/integration/gnome-terminal/"
+
+
+echo "Installs homyzsh"
+sudo apt-get update
+sudo apt-get install git-core zsh
+sudo cp $(which zsh) /etc/shells
+sudo usermod -s $(which zsh) $USER
+sudo chsh -s $(which zsh)
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
