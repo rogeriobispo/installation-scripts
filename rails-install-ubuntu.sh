@@ -21,12 +21,12 @@ git clone https://github.com/rogeriobispo/my_vim_files.git ~/.vim
 cd ~/.vim
 make
 echo "source ~/.vim/vimrc" > ~/.vimrc
-apt-get install silversearcher-ag
+sudo apt-get install silversearcher-ag
 cd -
 
 echo "installs docker"
 curl -fsSL get.docker.com -o get-docker.sh
-bash get-docker.sh
+sudo bash get-docker.sh
 sudo usermod -aG docker YOUR_USER_NAME
 docker --version
 
