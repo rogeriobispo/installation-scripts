@@ -27,7 +27,7 @@ cd -
 echo "installs docker"
 curl -fsSL get.docker.com -o get-docker.sh
 sudo bash get-docker.sh
-sudo usermod -aG docker YOUR_USER_NAME
+sudo usermod -aG docker $USER
 docker --version
 
 echo "Installs docker-compose"
