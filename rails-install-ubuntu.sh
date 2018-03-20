@@ -16,11 +16,12 @@ echo "Installs terminator"
 sudo apt-get install terminator
 
 echo "Installs vim"
-git clone git@github.com:rogeriobispo/my_vim_files.git
+git clone https://github.com/rogeriobispo/my_vim_files.git ~/.vim
 cd ~/.vim
 make
-cd -
+echo "source ~/.vim/vimrc" > ~/.vimrc
 apt-get install silversearcher-ag
+cd -
 
 echo "installs docker"
 curl -fsSL get.docker.com -o get-docker.sh
