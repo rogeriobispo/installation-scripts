@@ -17,7 +17,7 @@ sudo apt-get install terminator
 
 echo "Installs vim"
 git clone git@github.com:rogeriobispo/my_vim_files.git
-cd ~/.vimdiaadkd
+cd ~/.vim
 make
 cd -
 apt-get install silversearcher-ag
