@@ -16,7 +16,7 @@ echo "Installs terminator"
 sudo apt-get install terminator
 
 echo "Installs vim"
-git@github.com:rogeriobispo/my_vim_files.git
+git clone git@github.com:rogeriobispo/my_vim_files.git
 cd ~/.vimdiaadkd
 make
 cd -
