@@ -95,4 +95,5 @@ sudo apt-get install git-core zsh
 sudo cp $(which zsh) /etc/shells
 sudo usermod -s $(which zsh) $USER
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-shutdown -r 0 
+cp .zshrc ~
+shutdown -r 0
