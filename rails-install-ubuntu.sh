@@ -16,7 +16,7 @@ echo "Installs homyzsh"
 sudo apt-get update
 sudo apt-get install git-core zsh
 sudo cp $(which zsh) /etc/shells
-chsh -s /bin/zsh
+sudo usermod -s /bin/zsh $USER
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 
 echo "Installs terminator"
