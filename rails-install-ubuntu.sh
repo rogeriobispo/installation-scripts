@@ -8,8 +8,36 @@ then
 fi
 
 set -e
-
+echo "Installs curl"
+sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+echo "Installs homyzsh"
+sudo apt-get update
+sudo apt-get install git-core zsh
+chsh -s /bin/zsh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+
+echo "Installs terminator"
+sudo apt-get install terminator
+
+echo "Installs vim"
+git@github.com:rogeriobispo/my_vim_files.git
+cd ~/.vimdiaadkd
+make
+cd -
+apt-get install silversearcher-ag
+
+echo "installs docker"
+curl -fsSL get.docker.com -o get-docker.sh
+bash get-docker.sh
+sudo usermod -aG docker YOUR_USER_NAME
+docker --version
+
+echo "Installs docker-compose"
+sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
 
 echo "Updates packages. Asks for your password."
 sudo apt-get update -y
@@ -48,18 +76,18 @@ echo -n "Should be Rails 4.2.1 or higher:         "
 rails -v
 echo -e "\n- - - - - -\n"
 
-echo "If the versions match, everything is installed correctly. If the versions 
-don't match or errors are shown, something went wrong with the automated process 
+echo "If the versions match, everything is installed correctly. If the versions
+don't match or errors are shown, something went wrong with the automated process
 and we will help you do the installation the manual way at the event.
 
 Congrats!
-                                                                                 
-Make sure that all works well by running the application generator command:         
-    $ rails new railsgirls                                                       
-                                                                                 
-If you encounter the message:                                                    
-    The program 'rails' is currently not installed.                              
-                                                                                 
-It is just a hiccup with the shell, solutions:                                   
-    $ source ~/.rvm/scripts/rvm                                                  
+
+Make sure that all works well by running the application generator command:
+    $ rails new railsgirls
+
+If you encounter the message:
+    The program 'rails' is currently not installed.
+
+It is just a hiccup with the shell, solutions:
+    $ source ~/.rvm/scripts/rvm
     Allow login shell, example http://rvm.io/integration/gnome-terminal/"
