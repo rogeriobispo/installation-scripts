@@ -15,6 +15,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 echo "Installs homyzsh"
 sudo apt-get update
 sudo apt-get install git-core zsh
+cp $(which zsh) /etc/shells
 chsh -s /bin/zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 
