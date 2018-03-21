@@ -12,15 +12,15 @@ set -e
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 echo "Installs terminator"
-sudo apt-get install terminator
+sudo apt-get install terminator -y
 
 echo "Installs vim"
-sudo apt-get install vim
+sudo apt-get install vim -y
 git clone https://github.com/rogeriobispo/my_vim_files.git ~/.vim
 cd ~/.vim
 make
 echo "source ~/.vim/vimrc" > ~/.vimrc
-sudo apt-get install silversearcher-ag
+sudo apt-get install silversearcher-ag -y
 cd -
 
 echo "installs docker"
