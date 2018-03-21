@@ -8,8 +8,7 @@ then
 fi
 
 set -e
-echo "Installs curl"
-sudo apt-get install curl
+
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 echo "Installs terminator"
@@ -97,3 +96,10 @@ sudo usermod -s $(which zsh) $USER
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 cp .zshrc ~
 shutdown -r 0
+
+
+echo "instalar programas a parte"
+
+echo "dia-normal 0.97.3 para diagramas de dados"
+echo "pencil para mokflow"
+echo "postman para test de apis"
