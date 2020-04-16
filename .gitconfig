@@ -1,0 +1,32 @@
+[user]
+	name = Rogerio Bispo
+	email = rogerio_pd@yahoo.com.br
+[core]
+	editor = vim
+	# exludesfile = ~/.gitignore_global
+
+[push]
+	default = current
+	rebase = true
+
+[branch]
+	autosetupprebase = always
+
+[commit]
+	template = ~/.gitmessage
+
+[color]
+	ui = true
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+
+[color "branch"]
+	current = white
+	remote = red
+[color "diff"]
+	meta = yellow
+	old = red
+	new = green

@@ -1,0 +1,45 @@
+// basic config for settings json
+{
+  // Define o tema do VSCode
+  "workbench.colorTheme": "Dracula",
+  // Aumenta a fonte do terminal
+  "terminal.integrated.fontSize": 14,
+  // Define o tema dos ícones na sidebar
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  // Configura tamanho e família da fonte
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+  // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "Fira Code",
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.suggest.autoImports": false,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "editor.formatOnSave": true
+    }
+  },
+  "[javascriptReact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "editor.formatOnSave": true
+    }
+  },
+  "window.zoomLevel": 1,
+}
