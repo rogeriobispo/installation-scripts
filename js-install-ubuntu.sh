@@ -50,3 +50,5 @@ echo "https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-
 echo "tips page bellow"
 echo "https://blog.rocketseat.com.br/ambiente-desenvolvimento-javascript/"
 
+echo "instalar o terminal hyper"
+echo "https://hyper.is/#installation"

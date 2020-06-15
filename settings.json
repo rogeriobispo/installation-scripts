@@ -1,34 +1,81 @@
-// basic config for settings json
 {
-  // Define o tema do VSCode
-  "workbench.colorTheme": "Dracula",
-  // Aumenta a fonte do terminal
   "terminal.integrated.fontSize": 14,
-  // Define o tema dos ícones na sidebar
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
-  // Configura tamanho e família da fonte
+
   "editor.tabSize": 2,
   "editor.fontSize": 18,
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 26,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
   "extensions.ignoreRecommendations": true,
-  // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
-  "editor.rulers": [
-    80,
-    120
-  ],
+
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "Fira Code",
-  "editor.parameterHints.enabled": false,
+
   "breadcrumbs.enabled": true,
-  "javascript.suggest.autoImports": false,
-  "editor.formatOnSave": true,
+  "editor.parameterHints.enabled": true,
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  
+  "editor.rulers": [80, 120],
+  
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+
+  "window.zoomLevel": 0,
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  
+  "gitlens.codeLens.recentChange.enabled": true,
+  "gitlens.codeLens.authors.enabled": true,
+  "gitlens.codeLens.enabled": true,
+
+  "git.enableSmartCommit": true,
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "liveshare.featureSet": "insiders",
+
+  "typescript.tsserver.log": "verbose",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "material-icon-theme.activeIconPack": "nest",
+  "screencastMode.onlyKeyboardShortcuts": true,
+
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe"
+  },
+
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.proto": "3d"
+  },
   "[javascript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
@@ -41,5 +88,17 @@
       "editor.formatOnSave": true
     }
   },
-  "window.zoomLevel": 1,
+  "[typescriptReact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "editor.formatOnSave": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "editor.formatOnSave": true
+    }
+  },
+  "workbench.colorTheme": "Dracula"
 }
