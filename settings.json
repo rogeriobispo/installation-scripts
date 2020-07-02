@@ -37,8 +37,7 @@
 
   "emmet.syntaxProfiles": { "javascript": "jsx" },
   "emmet.includeLanguages": { "javascript": "javascriptreact" },
-
-  
+    
   "gitlens.codeLens.recentChange.enabled": true,
   "gitlens.codeLens.authors.enabled": true,
   "gitlens.codeLens.enabled": true,
@@ -79,25 +78,21 @@
   "[javascript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
-      "editor.formatOnSave": true
     }
   },
-  "[javascriptReact]": {
+  "[javascriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
-      "editor.formatOnSave": true
     }
   },
-  "[typescriptReact]": {
+  "[typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
-      "editor.formatOnSave": true
     }
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
-      "editor.formatOnSave": true
     }
   },
   "workbench.colorTheme": "Dracula"
