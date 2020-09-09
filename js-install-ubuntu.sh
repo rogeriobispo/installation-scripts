@@ -53,5 +53,5 @@ echo "https://blog.rocketseat.com.br/ambiente-desenvolvimento-javascript/"
 echo "instalar o terminal hyper"
 echo "https://hyper.is/#installation"
 
-echo "Inteligencia artificial"
+echo "All-language-auto-complete"
 echo "TabNine"
