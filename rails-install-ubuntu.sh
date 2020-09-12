@@ -97,6 +97,9 @@ wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 cp .zshrc ~
 shutdown -r 0
 
+echo "Installing asdf"
+echo "https://asdf-vm.com/#/core-manage-asdf-vm"
+
 
 echo "instalar programas a parte"
 
@@ -106,3 +109,6 @@ echo "postman para test de apis"
 echo "instalar dbeaver gestão de banco da dados"
 echo "instalar flat remix tema ubuntu"
 echo "https://github.com/daniruiz/flat-remix"
+echo "configurando novo thema"
+sudo apt-get install gnome-tweak-tool fonts-hack-ttf -y 
+abrir tweak e escolher o tema 
