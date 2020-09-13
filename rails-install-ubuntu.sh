@@ -98,7 +98,13 @@ cp .zshrc ~
 shutdown -r 0
 
 echo "Installing asdf"
+sudo apt-get install --reinstall git-lfs
 echo "https://asdf-vm.com/#/core-manage-asdf-vm"
+echo "add plugin on .zshrc 'plugins=(asdf)'"
+echo "adicionar plugins"
+asdf plugin add nodejs
+asdf plugin add java 
+asdf plugin add ruby
 
 
 echo "instalar programas a parte"
